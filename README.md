@@ -1,7 +1,7 @@
 # AmEx Profitability Engine 🏦  
 ### American Express Campus Challenge 2026 — Strategy Track, Round 1
 
-> A deterministic, explainable profitability framework for ranking 500,000 Premier Cardmembers using issuer-style P&L logic, boundary analysis, and weight-only optimization against a strong 90% teacher prediction.
+> A deterministic, explainable profitability framework for ranking 500,000 Premier Cardmembers using issuer-style P&L logic, boundary analysis, and weight-only optimization against a strong 90% prediction.
 
 ---
 
@@ -24,12 +24,12 @@ So the main task is not normal supervised machine learning. It is a **rank-order
 We built the solution in two stages:
 
 1. **First-principles P&L scoring engine**
-2. **Weight-only optimization using a 90% accurate binary teacher prediction**
+2. **Weight-only optimization using a 90% accurate prediction**
 
 The idea was to start with a business-driven profitability equation and then analyze where customers swap around the top-20% boundary.
 
 ```text
-Raw Dataset + 90% Binary Prediction File
+Raw Dataset + 90% Prediction File
         |
         v
 ID Mapping and Validation
